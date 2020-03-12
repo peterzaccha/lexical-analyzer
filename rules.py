@@ -3,7 +3,7 @@
 #     (TYPE , REGEX , BEFORE , AFTER)
 # ]
 
-# negative lookahead
+# positive lookahead
 MATCH_UNTIL_SEQ = r"(?:(?=%s))"
 UNTIL_SPACE = MATCH_UNTIL_SEQ % r"\s"
 UNTIL_SPACE_OR_SEMICOLON = MATCH_UNTIL_SEQ % r"\s|\;"
@@ -87,5 +87,5 @@ RULES = [
     ("MULTI_COMMENT", r"\/\*.*\*\/", None, None),
     ("SINGLE_COMMENT", r"\/\/.*", None, None),
     ('SKIP', r'[ \t]+', None, None),  # Skip over spaces and tabs
-    ("MISMATCH", r".", None, None),
+    ("MISMATCH", r".+\s", None, None),
 ]
