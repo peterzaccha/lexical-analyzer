@@ -17,6 +17,7 @@ bool isPowerOfTwo(int x)
 Output
 
 ```c
+<SINGLE_COMMENT> : //test.c
 <BOOL> : bool
 <ID> : isPowerOfTwo
 <LEFT_ROUND_B> : (
