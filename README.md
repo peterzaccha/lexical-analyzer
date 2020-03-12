@@ -5,7 +5,7 @@ Using Regex
 python main.py 'test.c'
 
 ```c
-//test
+//test.c
 bool isPowerOfTwo(int x)
 {
     // First x in the below expression is
